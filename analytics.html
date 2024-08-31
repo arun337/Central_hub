@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Analytics</title>
+    <link rel="stylesheet" href="styles/analytics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Assessment Analytics</h1>
+    </header>
+    <main>
+        <section id="overall-performance">
+            <h2>Overall Assessment Performance</h2>
+            <canvas id="performance-chart"></canvas>
+        </section>
+
+        <section id="question-analysis">
+            <h2>Question-Level Analysis</h2>
+            <div id="question-charts">
+                <canvas id="question1-chart"></canvas>
+                <canvas id="question2-chart"></canvas>
+            </div>
+        </section>
+
+        <section id="student-trends">
+            <h2>Student Performance Trends</h2>
+            <canvas id="student-trends-chart"></canvas>
+        </section>
+
+        <section id="feedback-improvement">
+            <h2>Feedback and Improvement Areas</h2>
+            <div id="feedback-list">
+                <!-- Feedback and improvement areas will be dynamically inserted here -->
+                <p>Common Struggles: Topic X, Topic Y</p>
+                <p>Improvement Areas: Review concepts in Topic Z</p>
+            </div>
+        </section>
+
+        <section id="reporting">
+            <h2>Export Reports</h2>
+            <button id="export-report">Export Report</button>
+        </section>
+
+        <section id="comparison-tools">
+            <h2>Comparison Tools</h2>
+            <button id="compare-assessments">Compare Assessments</button>
+            <button id="compare-groups">Compare Student Groups</button>
+        </section>
+    </main>
+    <script src="javascript/analytic.js"></script>
+</body>
+</html>

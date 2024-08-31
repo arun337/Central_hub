@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading and Review</title>
+    <link rel="stylesheet" href="styles/grading_review.css">
+</head>
+<body>
+    <header>
+        <h1>Grading and Review</h1>
+    </header>
+    <main>
+        <section id="student-submissions">
+            <h2>Student Submissions</h2>
+            <div id="submissions-list">
+                <!-- List of student submissions will be dynamically inserted here -->
+                <div class="submission-item">
+                    <p>Student: John Doe</p>
+                    <p>Status: <span class="status">Ungraded</span></p>
+                    <button class="view-submission" data-student="John Doe">View Submission</button>
+                </div>
+                <div class="submission-item">
+                    <p>Student: Jane Smith</p>
+                    <p>Status: <span class="status">Graded</span></p>
+                    <button class="view-submission" data-student="Jane Smith">View Submission</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="grading">
+            <h2>Grading</h2>
+            <div id="question-grading">
+                <!-- Question-by-question grading will be dynamically inserted here -->
+                <div class="grading-item">
+                    <h3>Question 1: What is 2+2?</h3>
+                    <p>Answer: 4</p>
+                    <p>Automated Grade: 4/4</p>
+                    <textarea placeholder="Provide feedback here..."></textarea>
+                </div>
+                <div class="grading-item">
+                    <h3>Question 2: Explain gravity.</h3>
+                    <p>Answer: Gravity is...</p>
+                    <textarea placeholder="Provide feedback here..."></textarea>
+                </div>
+            </div>
+            <button id="submit-grade">Submit Grade and Feedback</button>
+        </section>
+
+        <section id="bulk-grading">
+            <h2>Bulk Grading Options</h2>
+            <button id="bulk-grade">Bulk Grade Submissions</button>
+            <button id="regrade-submissions">Regrade Submissions</button>
+        </section>
+
+        <button id="return-to-student">Return to Student View</button>
+    </main>
+    <script src="javascript/grading_reviw.js"></script>
+</body>
+</html>

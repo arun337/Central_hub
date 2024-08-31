@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Archive and Deletion</title>
+    <link rel="stylesheet" href="styles/archive-deletion.css">
+</head>
+<body>
+    <header>
+        <h1>Assessment Archive and Deletion</h1>
+    </header>
+    <main>
+        <section id="archive-assessment">
+            <h2>Archive Assessment</h2>
+            <label for="archive-select">
+                <select id="archive-select">
+                    <option value="" disabled selected>Select Assessment to Archive</option>
+                    <!-- Options populated dynamically -->
+                </select>
+            </label>
+            <button id="archive-button">Archive Assessment</button>
+        </section>
+
+        <section id="deletion-warning">
+            <h2>Deletion Warning</h2>
+            <p>Deleting an assessment is permanent and will result in the loss of all related data, including student responses and grades. Please ensure you have exported any necessary data before proceeding.</p>
+            <label for="delete-confirm">
+                Type the assessment title to confirm deletion:
+                <input type="text" id="delete-confirm" placeholder="Assessment Title">
+            </label>
+            <button id="delete-button">Confirm Deletion</button>
+        </section>
+
+        <section id="restore-archived">
+            <h2>Restore Archived Assessment</h2>
+            <label for="restore-select">
+                <select id="restore-select">
+                    <option value="" disabled selected>Select Archived Assessment to Restore</option>
+                    <!-- Options populated dynamically -->
+                </select>
+            </label>
+            <button id="restore-button">Restore Assessment</button>
+        </section>
+
+        <section id="export-data">
+            <h2>Export Assessment Data</h2>
+            <label for="export-select">
+                <select id="export-select">
+                    <option value="" disabled selected>Select Assessment to Export</option>
+                    <!-- Options populated dynamically -->
+                </select>
+            </label>
+            <button id="export-button">Export Data</button>
+        </section>
+    </main>
+    <script src="javascript/archive-deletion.js"></script>
+</body>
+</html>

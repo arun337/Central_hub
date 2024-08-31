@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank Management</title>
+    <link rel="stylesheet" href="styles/question_bank.css">
+</head>
+<body>
+    <div class="question-bank-container">
+        <h1>Question Bank Management</h1>
+        
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search Questions...">
+
+        <!-- Filter Options -->
+        <div class="filters">
+            <label for="filter-type">Filter by Type:</label>
+            <select id="filter-type">
+                <option value="">All Types</option>
+                <option value="multiple-choice">Multiple Choice</option>
+                <option value="short-answer">Short Answer</option>
+                <option value="essay">Essay</option>
+                <option value="true-false">True/False</option>
+            </select>
+
+            <label for="filter-difficulty">Filter by Difficulty:</label>
+            <select id="filter-difficulty">
+                <option value="">All Levels</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <label for="filter-subject">Filter by Subject:</label>
+            <select id="filter-subject">
+                <option value="">All Subjects</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <!-- Add more subjects as needed -->
+            </select>
+        </div>
+
+        <!-- Question List -->
+        <ul id="question-list">
+            <li>
+                <span>What is the capital of France? (Multiple Choice, Easy)</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </li>
+            <li>
+                <span>Explain the theory of relativity. (Essay, Hard)</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </li>
+            <!-- Add more questions dynamically -->
+        </ul>
+
+        <!-- Add New Question Button -->
+        <button id="add-new-question">Add New Question</button>
+
+        <!-- Import/Export Options -->
+        <div class="import-export">
+            <button id="import-questions">Import Questions</button>
+            <button id="export-questions">Export Questions</button>
+        </div>
+    </div>
+    <script src="javascript/question_bank.js"></script>
+</body>
+</html>

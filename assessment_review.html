@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Review</title>
+    <link rel="stylesheet" href="styles/assessment_review.css">
+</head>
+<body>
+    <header>
+        <h1>Assessment Review</h1>
+    </header>
+    <main>
+        <section id="overall-score">
+            <h2>Overall Score</h2>
+            <p>Your score: <span id="score">85%</span></p>
+        </section>
+
+        <section id="detailed-feedback">
+            <h2>Detailed Feedback</h2>
+            <div id="feedback-list">
+                <!-- Feedback for each question will be dynamically inserted here -->
+                <div class="feedback-item">
+                    <h3>Question 1: What is 2+2?</h3>
+                    <p>Your Answer: 4</p>
+                    <p>Correct Answer: 4</p>
+                    <p>Explanation: 2 + 2 equals 4.</p>
+                </div>
+                <div class="feedback-item">
+                    <h3>Question 2: Explain gravity.</h3>
+                    <p>Your Answer: Gravity is...</p>
+                    <p>Correct Answer: Gravity is the force...</p>
+                    <p>Explanation: Gravity is the force...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="submission-history">
+            <h2>Submission History</h2>
+            <div id="history-list">
+                <!-- Submission history will be dynamically inserted here -->
+                <div class="submission-entry">
+                    <p>Attempt 1: Score: 80% - Feedback: ...</p>
+                </div>
+                <div class="submission-entry">
+                    <p>Attempt 2: Score: 85% - Feedback: ...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="teacher-comments">
+            <h2>Teacher Comments</h2>
+            <p id="comments">Great job on understanding the core concepts!</p>
+        </section>
+
+        <div id="actions">
+            <button id="retake-assessment">Retake Assessment</button>
+            <button id="download-feedback">Download Feedback</button>
+        </div>
+    </main>
+    <script src="javascript/assessment_review.js"></script>
+</body>
+</html>

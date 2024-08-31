@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Taking</title>
+    <link rel="stylesheet" href="styles/assessment_taking.css">
+</head>
+<body>
+    <header>
+        <h1>Assessment Taking</h1>
+    </header>
+    <main>
+        <div id="assessment-info">
+            <h2 id="assessment-title">Assessment Title</h2>
+            <p id="instructions">Assessment Instructions</p>
+        </div>
+        <div id="timer" class="timer-display">
+            Time Left: <span id="timer-count">00:00</span>
+        </div>
+        <div id="question-navigation" class="navigation">
+            <button id="prev-question">Previous</button>
+            <button id="next-question">Next</button>
+            <div id="question-indicators">
+                <!-- Indicators for answered and unanswered questions -->
+            </div>
+        </div>
+        <form id="assessment-form">
+            <div id="question-display" class="question-display">
+                <!-- Current question with multimedia elements -->
+            </div>
+            <div id="answer-inputs" class="answer-inputs">
+                <!-- Answer fields based on question type -->
+            </div>
+            <button type="button" id="save-progress">Save Progress</button>
+            <button type="submit" id="submit-assessment">Submit Assessment</button>
+        </form>
+        <div id="feedback" class="feedback-display">
+            <!-- Feedback will be displayed here if immediate feedback is enabled -->
+        </div>
+    </main>
+    <script src="javascript/assessment_taking.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Assessment</title>
+    <link rel="stylesheet" href="styles/create_assessment.css">
+</head>
+<body>
+    <div class="creation-page-container">
+        <h1>Create New Assessment</h1>
+        <form id="create-assessment-form">
+            <!-- Assessment Title Field -->
+            <label for="title">Assessment Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <!-- Assessment Type Selection -->
+            <label for="type">Assessment Type:</label>
+            <select id="type" name="type" required>
+                <option value="quiz">Quiz</option>
+                <option value="assignment">Assignment</option>
+                <option value="survey">Survey</option>
+            </select>
+
+            <!-- Question Bank Access -->
+            <label for="question-bank">Question Bank:</label>
+            <select id="question-bank" name="question-bank" required>
+                <option value="create-new">Create New Question</option>
+                <option value="existing">Select from Existing Questions</option>
+            </select>
+
+            <!-- Question Creation Tool -->
+            <div id="question-creation-tool">
+                <label for="question-type">Question Type:</label>
+                <select id="question-type" name="question-type" required>
+                    <option value="multiple-choice">Multiple Choice</option>
+                    <option value="short-answer">Short Answer</option>
+                    <option value="essay">Essay</option>
+                    <option value="true-false">True/False</option>
+                </select>
+                <!-- Additional tools for creating questions would go here -->
+            </div>
+
+            <!-- Grading Options -->
+            <label for="grading">Grading Options:</label>
+            <select id="grading" name="grading" required>
+                <option value="automated">Automated Grading</option>
+                <option value="manual">Manual Grading</option>
+            </select>
+
+            <!-- Assessment Instructions -->
+            <label for="instructions">Assessment Instructions:</label>
+            <textarea id="instructions" name="instructions" required></textarea>
+
+            <!-- Time Limit and Attempts -->
+            <label for="time-limit">Time Limit (in minutes):</label>
+            <input type="number" id="time-limit" name="time-limit" required>
+
+            <label for="attempts">Allowed Attempts:</label>
+            <input type="number" id="attempts" name="attempts" value="1" required>
+
+            <!-- Feedback Options -->
+            <label for="feedback">Feedback Options:</label>
+            <select id="feedback" name="feedback" required>
+                <option value="immediate">Immediate Feedback</option>
+                <option value="delayed">Delayed Feedback</option>
+            </select>
+
+            <!-- Link to Course Content -->
+            <label for="course-content">Link to Course Content:</label>
+            <input type="text" id="course-content" name="course-content" placeholder="Link to course modules or topics">
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button type="button" id="preview-assessment">Preview</button>
+                <button type="submit">Save as Draft</button>
+                <button type="submit" id="publish-assessment">Publish</button>
+            </div>
+        </form>
+    </div>
+    <script src="javascript/home.js"></script>
+</body>
+</html>
+
